@@ -60,9 +60,11 @@ df.describe()
 
 <img width="608" alt="Screen Shot 2025-03-09 at 10 35 17 PM" src="https://github.com/user-attachments/assets/ff67d99e-6516-4287-a8dc-b0062157ddcd" />
 
-🚀 We should covert data type of InvoiceNo, StockCode, Description, CustomerID, Country into string
-🚀 Customer ID and description columns have many missing value
-🚀 Quantity and unit price columns have negative values
+🚀 - We should covert data type of InvoiceNo, StockCode, Description, CustomerID, Country into string.
+
+🚀 - Customer ID and description columns have many missing value.
+
+🚀 - Quantity and unit price columns have negative values.
 
 ### 2. Handle incorrect data type and value
 #### Handle incorrect datatype
@@ -112,7 +114,7 @@ print(df[df.UnitPrice < 0].head())
 #remove 2 orders having negative UnitPrice because of being missed Customer ID
 df =df[df.UnitPrice > 0]
 ```
-### 3.Handle missing and duplicate value
+### 3. Handle missing and duplicate value
 #### Check and handle missing value
 
 ```python
@@ -251,9 +253,11 @@ plt.show()
 
 <img width="631" alt="Screen Shot 2025-03-09 at 11 00 17 PM" src="https://github.com/user-attachments/assets/84cffc47-b5c0-42ce-8ed2-c7903d353da6" />
 
-🚀 Group 1-2 (2166 customers): Most of customers are one-time or occasional buyers. Opportunity to encourage repeat purchases through engagement strategies.
-🚀 Group 2-5 (1121 customers): Moderate group; target with loyalty programs to increase purchase frequency.
-🚀 Group 5-20 (600 customers): These customers are loyal and make multiple purchases, so focusing on retaining and rewarding them can drive more revenue.
+🚀 - Group 1-2 (2166 customers): Most of customers are one-time or occasional buyers. Opportunity to encourage repeat purchases through engagement strategies.
+
+🚀 - Group 2-5 (1121 customers): Moderate group; target with loyalty programs to increase purchase frequency.
+
+🚀 - Group 5-20 (600 customers): These customers are loyal and make multiple purchases, so focusing on retaining and rewarding them can drive more revenue.
 
 
 ```python
@@ -284,8 +288,10 @@ for container in ax.containers:
 plt.show()
 ```
 <img width="591" alt="Screen Shot 2025-03-09 at 11 01 31 PM" src="https://github.com/user-attachments/assets/37762f37-45b0-4047-b965-94eb007a338d" />
-🚀 60% customers spend under 1000 --> Engage with loyalty programs or personalized offers to increase spend.
-🚀 Group 1000-10000 (1359 customers): this is a significant revenue contributors --> must retain and increase value.
+
+🚀 - 60% customers spend under 1000 --> Engage with loyalty programs or personalized offers to increase spend.
+
+🚀 - Group 1000-10000 (1359 customers): this is a significant revenue contributors --> must retain and increase value.
 
 
 #### Calculate RFM Score
@@ -346,8 +352,9 @@ plt.show()
 ```
 <img width="597" alt="Screen Shot 2025-03-09 at 11 09 26 PM" src="https://github.com/user-attachments/assets/5a4cc458-12e0-4420-a7a0-1a38c689420a" />
 
- 🚀 The company's largest customer segment, "Champions" (17.9%) is a positive indicator, as these customers are highly loyal, engage in frequent transactions, and contribute significantly to sales.
- 🚀 However, a substantial portion of the customer base falls within the "Hibernating," "At Risk," and "Lost Customers" groups (36%), presenting a significant challenge. Without a targeted marketing strategy to re-engage these customers, the company's business performance may be severely impacted.
+ 🚀 - The company's largest customer segment, "Champions" (17.9%) is a positive indicator, as these customers are highly loyal, engage in frequent transactions, and contribute significantly to sales.
+ 
+ 🚀 - However, a substantial portion of the customer base falls within the "Hibernating," "At Risk," and "Lost Customers" groups (36%), presenting a significant challenge. Without a targeted marketing strategy to re-engage these customers, the company's business performance may be severely impacted.
 
 ### Average spending per customer for each Segmentation
   
@@ -386,17 +393,16 @@ plt.show()
 ```
 <img width="603" alt="Screen Shot 2025-03-09 at 11 11 36 PM" src="https://github.com/user-attachments/assets/11796f89-2fc6-4a2b-b40b-179b2eff7781" />
 
- 🚀The average spending per customer is highest for the "Champions," "Loyal," "At Risk," and "Cannot Lose" segments.
- 🚀The number of customers in the "Cannot Lose Them" segment is the smallest, but their contribution to revenue is extremely high.
- 🚀Although the number of customers in the "Hibernating Customers" and "Lost Customers" segments is significant, their average spending is lower than expected.
+ 🚀 -The average spending per customer is highest for the "Champions," "Loyal," "At Risk," and "Cannot Lose" segments.
+ 
+ 🚀 -The number of customers in the "Cannot Lose Them" segment is the smallest, but their contribution to revenue is extremely high.
+ 
+ 🚀 -Although the number of customers in the "Hibernating Customers" and "Lost Customers" segments is significant, their average spending is lower than expected.
 
 
 
 ## V. Final Conclusion & Recommendations 
 
-The analysis has revealed some inefficiencies in manufacturing performance. The most critical problems are:
 
-
-These issues directly impact manufacturing efficiency, delivery performance, and cost control, making them a priority for process improvement.
 
 ### Recommendations:
