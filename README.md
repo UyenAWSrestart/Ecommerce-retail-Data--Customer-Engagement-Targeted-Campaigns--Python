@@ -15,41 +15,34 @@ V. [Final Conclusion & Recommendations](#v-final-conclusion--recommendations)
 
 
 ## I. Introduction
+This project performs an RFM (Recency, Frequency, Monetary) analysis for the global retail company SuperStore using Python. 
 
-Based on the AdventureWorks database, this project analyzes the manufacturing process of a bicycle manufacturer using Power BI.
 ### The objective:
-- Ensure products are delivered on time.
-- Minimize scrapped products.
+- Understand user profile and enhance customers' engagement.
+- Identify key customer groups for targeted campaigns.
   
 ### Stakeholders: 
-The insights gained will empower the following stakeholders to make informed strategic decisions and enhance manufacturing operations:
+The insights gained will empower the following stakeholders to make informed strategic decisions :
 - Data analysts & business analysts
-- Production managers
-- Decision-makers & executives
+- Marketing and Sales teams
 
-### Business Questions:
-- Why does the company fail to deliver these products on time?
-- What strategies can be implemented to minimize scrapped products?
-  
 
 ## II. Dataset Description
+The attached dataset contains historical customer transactions from December 1, 2010, to September 9, 2011, for an e-commerce retail company.
+- Size: 541909 rows, 8 columns
+- Format: .xlsx
+- Table schema:
 
-- Source: The Bicycle Manufacturer dataset is stored in a public Google BigQuery dataset named "adventureworks2019"
-  To access the dataset, we log in to your Google Cloud Platform, navigate to the BigQuery console and search the project "adventureworks2019".
-  
-- Data Structure:
-  There are 5 tables that we will work on it.
-
-| Table                | Type                                                                                                                      |
-| -------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Fact_Product         | Details of product sold or used in production.                                                                            |
-| Fact_Workorder       | Contains order details, including product ID, scrapped products quantity, due date, start date, and end date.             |
-| Dim_ScrapReason      | Reason for scrapped products.                                                                                             |
-| Dim_WorkOrderRouting | Lists only on-time and late orders. Details of location, actual order and delivery time for each work order and product.  |
-| Dim_Location         | Lists each stage in the production process.                                                                               |
-
--  Data relationships:
-   ![Schema_manufacturing](https://github.com/user-attachments/assets/0208da0f-b6ce-4ff8-bd7a-19f3b930ed09)
+| Field       | Description                                                                                                                                                 |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| InvoiceNo   | Invoice number. Nominal, a 6-digit integral number uniquely assigned to each transaction. If this code starts with letter 'C', it indicates a cancellation. |
+| StockCode   | Product (item) code. Nominal, a 5-digit integral number uniquely assigned to each distinct product.                                                         |
+| Description | Product (item) name. Nominal.                                                                                                                               |
+| Quantity    | The quantities of each product (item) per transaction. Numeric.                                                                                             |
+| InvoiceDate | Invoice Date and time. Numeric, the day and time when each transaction was generated.                                                                       |
+| UnitPrice   | Unit price. Numeric, Product price per unit in sterling.                                                                                                    |
+| CustomerID  | Customer number. Nominal, a 5-digit integral number uniquely assigned to each customer.                                                                     |
+| Country     | Country name. Nominal, the name of the country where each customer resides.   
 
 
 ## III. Data Preparation
