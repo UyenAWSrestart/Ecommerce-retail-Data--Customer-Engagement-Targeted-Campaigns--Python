@@ -316,7 +316,7 @@ RFM_final.head()
 
 ## IV. Visualization
 
-### Number customer for each Segmentation
+### 1. Number customer for each Segmentation
 
 ```python
 # Calculate percentage of customers in each segment
@@ -356,7 +356,7 @@ plt.show()
  
  🚀 - However, a substantial portion of the customer base falls within the "Hibernating," "At Risk," and "Lost Customers" groups (36%), presenting a significant challenge. Without a targeted marketing strategy to re-engage these customers, the company's business performance may be severely impacted.
 
-### Average spending per customer for each Segmentation
+### 2. Average spending per customer for each Segmentation
   
 ```python
 # Calculate total spending per segment
