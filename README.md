@@ -12,7 +12,7 @@ I. [Introduction](#i-introduction)
 II. [Dataset Description](#ii-dataset-description)  
 III.[Data Preparation](#iii-data-preparation)  
 IV.[Visualization](#iv-visualization)  
-VI. [Final Conclusion & Recommendations](#v-final-conclusion--recommendations)
+V. [Recommendations](#v-recommendations)
 
 DATA PROCESSSING - CALUCULATE RFM
 ## I. Introduction
@@ -402,11 +402,8 @@ plt.show()
 
 
 
-## V. Final Conclusion & Recommendations 
+## V. Recommendations 
 
-
-
-### Recommendations:
 | Segment                                                   | Characteristics                                                                  | Recommendations             |
 | --------------------------------------------------------- | -------------------------------------------------------------------------------- | ---------------------------- |
 | Champions                                                 | - Highest-value customers with substantial spending<br> - Consistent engagement | - Provide VIP memberships or premium customer service.<br>\- Provide personalized discounts on high-end products, or on some holiday sales.<br>\- Invite them to exclusive brand events, webinars, or private communities. |
