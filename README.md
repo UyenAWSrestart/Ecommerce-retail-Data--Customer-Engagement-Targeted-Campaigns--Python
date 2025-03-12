@@ -1,4 +1,5 @@
-# [Python] RFM Analysis
+# Ecommerce retail Data - Customer Engagement & Targeted Campaigns | Python
+
 
 Author: [Uyen Nguyen]  
 Date: February 2025  
