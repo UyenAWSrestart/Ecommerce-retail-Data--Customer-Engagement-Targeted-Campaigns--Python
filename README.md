@@ -20,13 +20,15 @@ V. [🔎 Recommendations](#-recommendations)
 
 
 ## 📌 Background & Overview
-This project performs an RFM (Recency, Frequency, Monetary) analysis for the global retail company SuperStore using Python. 
 
-### The objective:
-- Understand user profile and enhance customers' engagement.
-- Identify key customer groups for targeted campaigns.
-  
-### Stakeholders: 
+### 📖 What is this project about?
+The objective of this project is to analyze customer profiles to help the global retail company SuperStore enhance engagement and identify key customer segments. This involves leveraging Python techniques, specifically the RFM model. The insights gained will enable stakeholders to launch targeted marketing campaigns and improve customer retention.
+> RFM Segmentation is a method to analyze customer behavior based on three key metrics:
+> - Recency (R): Time since the last purchase. Recent buyers are more likely to purchase again.
+> - Frequency (F): Number of purchases within a period. Frequent buyers are more loyal.
+> - Monetary Value (M): Total money spent. High spenders are more valuable to the business.
+
+### 👤 Who is this project for?   
 The insights gained will empower the following stakeholders to make informed strategic decisions :
 - Data analysts & business analysts
 - Marketing and Sales teams
