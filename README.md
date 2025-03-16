@@ -12,14 +12,14 @@ Tools Used: Python
 ---
 
 ## 📑 Table of Contents  
-I. [Introduction](#i-introduction)  
-II. [Dataset Description](#ii-dataset-description)  
-III.[Data Preparation](#iii-data-preparation)  
-IV.[Visualization](#iv-visualization)  
-V. [Recommendations](#v-recommendations)
+I. [📌 Background & Overview](#-background--overview)  
+II. [📂 Dataset Description](#-dataset-description)  
+III.[🚩 Data Preparation](#-data-preparation)  
+IV.[📊 Visualization](#-visualization)  
+V. [🔎 Recommendations](#-recommendations)
 
-DATA PROCESSSING - CALUCULATE RFM
-## I. Introduction
+
+## 📌 Background & Overview
 This project performs an RFM (Recency, Frequency, Monetary) analysis for the global retail company SuperStore using Python. 
 
 ### The objective:
@@ -32,7 +32,7 @@ The insights gained will empower the following stakeholders to make informed str
 - Marketing and Sales teams
 
 
-## II. Dataset Description
+## 📂 Dataset Description
 The attached dataset contains historical customer transactions from December 1, 2010, to September 9, 2011, for an e-commerce retail company.
 - Size: 541909 rows, 8 columns
 - Format: .xlsx
@@ -50,7 +50,7 @@ The attached dataset contains historical customer transactions from December 1, 
 | Country     | Country name. Nominal, the name of the country where each customer resides.   
 
 
-## III. Data Preparation
+## 🚩 Data Preparation
 
 This part involved checking and handling for missing values, duplicates, and incorrect data types to ensure data integrity. Additionally, outlier values were identified and handled based on the dataset's context to maintain accuracy and consistency.
 ### 1. Explore Data type and value
@@ -319,7 +319,7 @@ RFM_final = RFM_drop_outlier.merge(Segment, on='RFM_Score', how='left')
 RFM_final.head() 
 ```
 
-## IV. Visualization
+## 📊 Visualization
 
 ### 1. Number customer for each Segmentation
 
@@ -406,7 +406,7 @@ plt.show()
 
 
 
-## V. Recommendations 
+## 🔎 Recommendations 
 
 | Segment                                                   | Characteristics                                                                  | Recommendations             |
 | --------------------------------------------------------- | -------------------------------------------------------------------------------- | ---------------------------- |
