@@ -1,4 +1,8 @@
-# Ecommerce retail Data - Customer Engagement & Targeted Campaigns | Python
+<img width="1000" alt="Screen Shot 2025-03-16 at 4 45 10 PM" src="https://github.com/user-attachments/assets/de4b133c-9934-498f-906f-80f8b18b8379" />
+
+
+
+# Project Title: Ecommerce retail Data - Customer Engagement & Targeted Campaigns | Python
 
 
 Author: [Uyen Nguyen]  
