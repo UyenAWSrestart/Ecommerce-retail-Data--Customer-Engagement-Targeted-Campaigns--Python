@@ -23,7 +23,7 @@ V. [🔎 Recommendations](#-recommendations)
 
 ### 📖 What is this project about?
 The objective of this project is to analyze customer profiles to help the global retail company SuperStore enhance engagement and identify key customer segments. This involves leveraging Python techniques, specifically the RFM model. The insights gained will enable stakeholders to launch targeted marketing campaigns and improve customer retention.
-> RFM Segmentation is a method to analyze customer behavior based on three key metrics:
+> RFM Segmentation is a method to classify customers based on their purchasing behaviors using three key metrics:
 > - Recency (R): Time since the last purchase. Recent buyers are more likely to purchase again.
 > - Frequency (F): Number of purchases within a period. Frequent buyers are more loyal.
 > - Monetary Value (M): Total money spent. High spenders are more valuable to the business.
@@ -35,11 +35,16 @@ The insights gained will empower the following stakeholders to make informed str
 
 
 ## 📂 Dataset Description
-The attached dataset contains historical customer transactions from December 1, 2010, to September 9, 2011, for an e-commerce retail company.
+
+### 🌐 Data Source  
+- The attached dataset contains historical customer transactions from December 1, 2010, to September 9, 2011, for an e-commerce retail company.
 - Size: 541909 rows, 8 columns
 - Format: .xlsx
-- Table schema:
-
+  
+### 🔀 Table schema:
+<details>
+<summary> Dataset Description</summary>  
+     
 | Field       | Description                                                                                                                                                 |
 | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | InvoiceNo   | Invoice number. Nominal, a 6-digit integral number uniquely assigned to each transaction. If this code starts with letter 'C', it indicates a cancellation. |
@@ -51,11 +56,13 @@ The attached dataset contains historical customer transactions from December 1, 
 | CustomerID  | Customer number. Nominal, a 5-digit integral number uniquely assigned to each customer.                                                                     |
 | Country     | Country name. Nominal, the name of the country where each customer resides.   
 
+</details>
 
 ## 🚩 Data Preparation
 
 This part involved checking and handling for missing values, duplicates, and incorrect data types to ensure data integrity. Additionally, outlier values were identified and handled based on the dataset's context to maintain accuracy and consistency.
-### 1. Explore Data type and value
+
+### 1️⃣ Explore Data type and value
 ```python
 # Explore data type
 df.info()
@@ -73,7 +80,7 @@ df.describe()
 
 🚀 - Quantity and unit price columns have negative values.
 
-### 2. Handle incorrect data type and value
+### 2️⃣ Handle incorrect data type and value
 #### Handle incorrect datatype
 
 ```python
@@ -121,7 +128,7 @@ print(df[df.UnitPrice < 0].head())
 #remove 2 orders having negative UnitPrice because of being missed Customer ID
 df =df[df.UnitPrice > 0]
 ```
-### 3. Handle missing and duplicate value
+### 3️⃣ Handle missing and duplicate value
 #### Check and handle missing value
 
 ```python
@@ -158,7 +165,7 @@ df =df.sort_values(by=['InvoiceNo', 'Quantity'], ascending=False)
 df = df.drop_duplicates(subset=['InvoiceNo', 'StockCode','InvoiceDate','CustomerID'], keep='first')
 df.shape
 ```
-### 4. Calculate RFM
+### 4️⃣ Calculate RFM
 #### Transform segmentation table
 
 ```python
@@ -323,7 +330,7 @@ RFM_final.head()
 
 ## 📊 Visualization
 
-### 1. Number customer for each Segmentation
+### 1️⃣ Number customer for each Segmentation
 
 ```python
 # Calculate percentage of customers in each segment
@@ -363,7 +370,7 @@ plt.show()
  
  🚀 - However, a substantial portion of the customer base falls within the "Hibernating," "At Risk," and "Lost Customers" groups (36%), presenting a significant challenge. Without a targeted marketing strategy to re-engage these customers, the company's business performance may be severely impacted.
 
-### 2. Average spending per customer for each Segmentation
+### 2️⃣ Average spending per customer for each Segmentation
   
 ```python
 # Calculate total spending per segment
