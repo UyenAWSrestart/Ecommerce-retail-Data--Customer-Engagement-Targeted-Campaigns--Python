@@ -38,10 +38,9 @@ The insights gained will empower the following stakeholders to make informed str
 
 ### 🌐 Data Descripion
 - There are two tables used in this project to support the analysis and generate insights.
-  + Table 1: Historical customer transactions  
-   The attached dataset contains historical customer transactions from December 1, 2010, to September 9, 2011, for an e-commerce retail company.  
-   Size: 541909 rows, 8 columns
-  + Table 2: Segmentation
+  + **Table 1:** Historical customer transactions from December 1, 2010, to September 9, 2011, for an e-commerce retail company.  
+                Size: 541909 rows, 8 columns
+  + **Table 2:** Segmentation
 - Format: .xlsx
   
 ### 🔀 Table schema:
