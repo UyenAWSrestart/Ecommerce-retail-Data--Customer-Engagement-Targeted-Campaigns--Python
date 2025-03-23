@@ -22,7 +22,8 @@ V. [🔎 Recommendations](#-recommendations)
 ## 📌 Background & Overview
 
 ### 📖 What is this project about?
-The objective of this project is to analyze customer profiles to help the global retail company SuperStore enhance engagement and identify key customer segments. This involves leveraging Python techniques, specifically the RFM model. The insights gained will enable stakeholders to launch targeted marketing campaigns and improve customer retention.
+- The objective of this project is to analyze customer profiles to help the global retail company SuperStore enhance engagement and identify key customer segments. 
+- This involves leveraging Python techniques, specifically the RFM model. The insights gained will enable stakeholders to launch targeted marketing campaigns and improve customer retention.
 > RFM Segmentation is a method to classify customers based on their purchasing behaviors using three key metrics:
 > - Recency (R): Time since the last purchase. Recent buyers are more likely to purchase again.
 > - Frequency (F): Number of purchases within a period. Frequent buyers are more loyal.
