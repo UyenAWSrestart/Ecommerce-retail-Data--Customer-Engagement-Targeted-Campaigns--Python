@@ -1,5 +1,6 @@
-<img width="1000" alt="Screen Shot 2025-03-16 at 4 45 10 PM" src="https://github.com/user-attachments/assets/de4b133c-9934-498f-906f-80f8b18b8379" />
 
+
+<img width="1000" alt="Screen Shot 2025-03-26 at 11 12 41 PM" src="https://github.com/user-attachments/assets/d4f75df6-bdc9-472c-a1e9-5f0614ce4797" />
 
 
 # Project Title: Ecommerce retail Data - Customer Engagement & Targeted Campaigns | Python
