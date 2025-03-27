@@ -6,7 +6,7 @@
 # Project Title: Ecommerce retail Data - Customer Engagement & Targeted Campaigns | Python
 
 
-Author: [Uyen Nguyen]  
+Author: [Olivia Nguyen]  
 Date: February 2025  
 Tools Used: Python
 
